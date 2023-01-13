@@ -16,19 +16,10 @@ Indicator_cat10 = pd.read_csv('shopping_10_cats/Indicator_cat10.csv')
 
 st.title('Training data：')
 st.write(
-    "Data overview: 10 categories (books, tablets, mobile phones, fruits, shampoos, water heaters, Mengniu, clothes, "
-    "computers, hotels), with a total of more than 60000 comment data, with about 30000 positive and negative "
-    "comments each")
-st.dataframe(df_cat_count)
+    "データの概要 10カテゴリー（本、タブレット、携帯電話、果物、シャンプー、給湯器、蒙牛(中国飲み物)、洋服、パソコン、ホテル） "
+    "シャンプー、給湯器、蒙牛(中国飲み物)、洋服、パソコン、ホテル）、 "
+    "合計60000件以上のコメントデータで、ポジティブとネガティブのコメントがそれぞれ30000件ほどある")
 
-# st.title('Model weight:')
-# st.image('shopping_10_cats/shopping_10_cats.png', channels="BGR")
-
-# st.title('Model evaluation indicators:')
-# st.write('Accuracy')
-# st.line_chart(Indicator_cat10[["acc", "val_acc"]])
-# st.write('loss')
-# st.line_chart(Indicator_cat10[["loss", "val_loss"]])
 
 st.title('Classification report:')
 st.dataframe(classification_report)
